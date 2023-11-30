@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome, esteemed Monster Seeker!</h1>
+    
+</div>
+<div>
+    <p>
+        Having traversed the vast lands of the Forgotten Realms, I've crossed paths with countless beasts. Should you seek enlightenment and insight into a specific creature, I stand ready to be of assistance. Kindly share the name of the monster you yearn to understand, and I shall impart all the knowledge at my disposal.
+        <br /><br />
+        <b>Monster Search</b>
+    </p>
+</div>
+
+<form asp-action="Search" asp-controller="Animals" method="post">
+    <input type="text" name="monsterName" />
+    <input type="submit" value="Search" />
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <p>@ViewBag.Message</p>
+}

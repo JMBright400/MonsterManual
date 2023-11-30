@@ -1,0 +1,35 @@
+﻿@model TestMonster.Models.Animal
+
+<div class="row">
+    <div class="col-12">
+        <p style="font-size: 50px;"><strong>@Model.MonsterName</strong></p>
+        <p><strong>Description:</strong> @Model.MonsterDescription</p>
+        <img src="@Model.ImageUrl" alt="Image of @Model.MonsterName" style="max-width: 100%;" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <p><strong>Environment:</strong> @Model.Environment</p>
+        <p><strong>Hit Points:</strong> @Model.HitPoints</p>
+        <p><strong>Armor Class:</strong> @Model.ArmorClass</p>
+        <p><strong>Size:</strong> @Model.Size</p>
+        <p><strong>Creature Type:</strong> @Model.CreatureType</p>
+    </div>
+    <div class="col-md-6">
+        <p><strong>Alignment:</strong> @Model.Alignment</p>
+        <p><strong>Speed:</strong> @Model.Speed</p>
+        <p><strong>Saves:</strong> @Model.Saves</p>
+        <p><strong>Feats:</strong> @Model.Feats</p>
+        <p><strong>Challenge Rating:</strong> @Model.ChallengeRating</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p><strong>Base Attack:</strong> @Model.BaseAttack</p>
+        <p><strong>Grapple:</strong> @Model.Grapple</p>
+        <p><strong>Full Attack:</strong> @Model.FullAttack</p>
+        <p><strong>Special Attack:</strong> @Model.SpecialAttack</p>
+    </div>
+</div>
